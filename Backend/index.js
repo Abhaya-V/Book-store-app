@@ -7,7 +7,11 @@ app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 
 const cors = require("cors")
-app.use(cors())
+app.use(cors({
+    origin: " https://book-store-app-fr-six.vercel.app",
+    credentials: true,
+    methods: ["GET", "POST", "PUT", "DELETE"]
+  }));
 
 require("./db/connection")
 
