@@ -16,7 +16,7 @@ const EditBook = () => {
 
  
   useEffect(() => {
-    axiosInstance.get(`http://localhost:5000/book/get/${id}`)
+    axiosInstance.get(`https://book-store-app-six-roan.vercel.app/book/get/${id}`)
       .then((res) => {
         setForm(res.data)
       })
@@ -28,7 +28,7 @@ const EditBook = () => {
   
   const handleUpdate = (e) => {
     e.preventDefault()
-    axiosInstance.put(`http://localhost:5000/book/put/${id}`, form)
+    axiosInstance.put(`https://book-store-app-six-roan.vercel.app/book/put/${id}`, form)
       .then((res) => {
         console.log('Book updated:', res.data)
         navigate('/home')

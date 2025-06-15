@@ -8,7 +8,7 @@ const DeleteBook = () => {
   const navigate = useNavigate()
 
   useEffect(() => {
-    axiosInstance.delete(`http://localhost:5000/book/delete/${id}`)
+    axiosInstance.delete(`https://book-store-app-six-roan.vercel.app/book/delete/${id}`)
       .then((res) => {
         alert("Are you sure to delete this book ?")
         console.log('Book deleted:', res.data)

@@ -15,7 +15,7 @@ const CreateBook = () => {
 
   const handleSubmit = (e) =>{
     e.preventDefault()
-    axiosInstance.post('http://localhost:5000/book/post',form)
+    axiosInstance.post('https://book-store-app-six-roan.vercel.app/book/post',form)
     .then((res)=>{
      console.log(res)
       navigate('/home')

@@ -13,7 +13,7 @@ const Login = () => {
         
           const handleSubmit = (e) =>{
             e.preventDefault()
-            axios.post('http://localhost:5000/user/',form)
+            axios.post('https://book-store-app-six-roan.vercel.app/user/',form)
             .then((res)=>{
              alert(res.data.message)
              if(res.data.token){

@@ -9,7 +9,7 @@ const Home = () => {
   const { id } = useParams();
   useEffect(() => {
     axiosInstance
-      .get("http://localhost:5000/book/get")
+      .get("https://book-store-app-six-roan.vercel.app/book/get")
       .then((res) => {
         console.log(res);
         setData(res.data);

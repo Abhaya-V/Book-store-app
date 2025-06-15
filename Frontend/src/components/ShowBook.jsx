@@ -10,7 +10,7 @@ const ShowBook = () => {
 
   useEffect(() => {
     axiosInstance
-      .get(`http://localhost:5000/book/get/${id}`)
+      .get(`https://book-store-app-six-roan.vercel.app/book/get/${id}`)
       .then((res) => setBook(res.data))
       .catch((err) => console.log(err));
   }, [id]);

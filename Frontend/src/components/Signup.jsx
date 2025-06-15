@@ -15,7 +15,7 @@ const Signup = () => {
     
       const handleSubmit = (e) =>{
         e.preventDefault()
-        axios.post('http://localhost:5000/user/signup',form)
+        axios.post('https://book-store-app-six-roan.vercel.app/user/signup',form)
         .then((res)=>{
          console.log(res)
           navigate('/')
