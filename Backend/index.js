@@ -15,6 +15,9 @@ const bookRoute = require("./routes/BookRoutes")
 const userRoute = require("./routes/UserRoutes")
 const PORT = process.env.PORT
 
+app.get("/", (req, res) => {
+    res.send("API is running");
+  });
 app.use("/book",bookRoute)
 app.use("/user",userRoute)
 
